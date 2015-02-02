@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
  * @author danalubow
@@ -145,18 +139,7 @@ public class NewJFrame extends javax.swing.JFrame {
             endMonthVal += months[i2];
             i2--;
         }
-        /*
-        int todayDayVal = todayMonthVal + todayDay;
-        int todayHourVal = (todayDayVal * 24) + todayHour;
-        int todayMinVal = (todayHourVal * 60) + todayMin;
         
-        int endDayVal = endMonthVal + endDay;
-        int endHourVal = (endDayVal * 24) + endHour;
-        int endMinVal = (endHourVal * 60) + endMin;
-        
-        int timeMinVal = endMinVal - todayMinVal;
-        int timeSecVal = timeMinVal * 60;
-        */
         int a = (endMonthVal - todayMonthVal) + (endDay - todayDay) - 1;
         Timer timer = new Timer();
         TimerTask task;
